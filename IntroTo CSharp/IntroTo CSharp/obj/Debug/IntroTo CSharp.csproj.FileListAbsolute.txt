@@ -1,0 +1,5 @@
+C:\code\xamarinkursus\IntroTo CSharp\IntroTo CSharp\bin\Debug\IntroTo CSharp.exe.config
+C:\code\xamarinkursus\IntroTo CSharp\IntroTo CSharp\bin\Debug\IntroTo CSharp.exe
+C:\code\xamarinkursus\IntroTo CSharp\IntroTo CSharp\bin\Debug\IntroTo CSharp.pdb
+C:\code\xamarinkursus\IntroTo CSharp\IntroTo CSharp\obj\Debug\IntroTo CSharp.exe
+C:\code\xamarinkursus\IntroTo CSharp\IntroTo CSharp\obj\Debug\IntroTo CSharp.pdb
