@@ -17,7 +17,8 @@ namespace ConsoleApplication1
             //Opgave_2_03();
             //Opgave_2_04();
             //Opgave_2_05();
-            Opgave_2_06();
+            //Opgave_2_06();
+            Opgave_2_07();
         }
 
         public static void Opgave_0()
@@ -121,8 +122,8 @@ namespace ConsoleApplication1
             {
                 //Console.WriteLine(array1[i]);
                 if (array1[i] > highest)
-                highest = array1[i];
-               
+                    highest = array1[i];
+
             }
             Console.WriteLine("THe higst number is: ");
             Console.WriteLine(highest);
@@ -131,8 +132,30 @@ namespace ConsoleApplication1
         public static void Opgave_2_06()
         {
             Console.WriteLine("Opgave_2_06:");
+            int Tal_1 = 1;
+
+            Tal_1=System.Convert.ToInt32(System.Console.ReadLine());
+            while (Tal_1 != 0)
+            {
+                Console.WriteLine(Tal_1 * 10);
+                Console.WriteLine("Indtast tal 1:");
+                Tal_1 = System.Convert.ToInt32(System.Console.ReadLine());
+            }
+        }
+        public static void Opgave_2_07()
+        {
+            Console.WriteLine("Opgave_2_07:");
+            int Tal_1 = 1;
+            do
+            {
+                Console.WriteLine("Indtast tal 1:");
+                Tal_1 = System.Convert.ToInt32(System.Console.ReadLine());
+                Console.WriteLine(Tal_1 * 10);
+            }
+            while (Tal_1 != 0);
 
         }
+
 
     }
 }
