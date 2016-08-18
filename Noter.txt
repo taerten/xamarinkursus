@@ -1,3 +1,8 @@
+APP-ideer:
+hjemmearbejdsplads-organisering/styring
+
+
+
 Hvad mangler:
 -få slides på mail
 - installer ALT hjemme.
@@ -23,4 +28,11 @@ Intellisense
 
 http://practiceexercisescsharp.blogspot.dk/
 
+http://johanhallager
 
+devu.com
+https://www.quora.com
+https://www.4kdownload.com/
+http://www.jdownloader.org/
+
+access modifier
