@@ -36,3 +36,29 @@ https://www.4kdownload.com/
 http://www.jdownloader.org/
 
 access modifier
+
+Felter:
+
+Kan ikke;
+23/8 obvision
+25/8 Tandlæge skalrykkes
+23/9 sidste dag xamarin
+29/8 Jobnet
+
+public string GetSetPersonNavn
+        {
+            get
+            {
+                return PersonNavn;
+            }
+            set
+            {
+                PersonNavn = value;
+                OnNameChanged();
+                OnPropertyChanged(nameof(GetSetPersonNavn));
+            }
+        }
+
+
+
+
