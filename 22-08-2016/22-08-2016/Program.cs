@@ -18,14 +18,17 @@ namespace _22_08_2016
             //Expression expr = ...;
 
             // Example:
+            Console.WriteLine(4.0.ToExpression());
+            Console.ReadKey();
+            
             Expression expr = new PlusExpression(
-                new ConstantExpression(4),
+                16.0.ToExpression(),
                 new PlusExpression(
                     new ConstantExpression(1),
                     new MinusExpression(
                         new ConstantExpression(1),
                         new ConstantExpression(2))));
-
+            
             // We print the textual representation
             Console.Write(expr.ToString());
 
@@ -35,21 +38,28 @@ namespace _22_08_2016
             Console.WriteLine(expr.Evaluate());
 
             Console.ReadKey();
-
         }
-
-
     }
 
-    abstract class Expression
+    // Extension Methods:
+    public static class ExpressionExtensions
+    {
+        public static Expression ToExpression(this double Ext2)
+        {
+            Expression Ext = new ConstantExpression(Ext2);
+            return Ext;
+        }
+    }
 
 
+
+    public abstract class Expression : IExpresion
 
     {
         abstract public double Evaluate();
     }
 
-    sealed class ConstantExpression : Expression
+    public sealed class ConstantExpression : Expression
     {
         public ConstantExpression(double Value)
         {
@@ -71,15 +81,15 @@ namespace _22_08_2016
     }
     abstract class BinaryExpression : Expression
 
-    { 
-   public BinaryExpression(Expression Left, Expression Right)
-        
     {
-   this.Left = Left;
-   this.Right = Right; 
-    }
-     
-    
+        public BinaryExpression(Expression Left, Expression Right)
+
+        {
+            this.Left = Left;
+            this.Right = Right;
+        }
+
+
         protected Expression Right;
         protected Expression Left;
         public abstract string OperatorSymbol
@@ -92,12 +102,12 @@ namespace _22_08_2016
             return "(" + Left.ToString() + " " + OperatorSymbol + " " + Right.ToString() + ")";
         }
     }
-    
+
     class PlusExpression : BinaryExpression
-       
+
 
     {
-        public PlusExpression (Expression Left, Expression Right): base (Left, Right)
+        public PlusExpression(Expression Left, Expression Right) : base(Left, Right)
         {
 
         }
@@ -119,7 +129,7 @@ namespace _22_08_2016
 
     class MinusExpression : BinaryExpression
     {
-        public MinusExpression(Expression Left, Expression Right): base (Left, Right)
+        public MinusExpression(Expression Left, Expression Right) : base(Left, Right)
         {
 
         }
@@ -139,7 +149,7 @@ namespace _22_08_2016
     }
     class MultiplyExpression : BinaryExpression
     {
-        public MultiplyExpression(Expression Left, Expression Right): base (Left, Right)
+        public MultiplyExpression(Expression Left, Expression Right) : base(Left, Right)
         {
 
         }
@@ -174,4 +184,11 @@ namespace _22_08_2016
             return -expr.Evaluate();
         }
     }
+
+    public interface IExpresion
+    {
+        double Evaluate();
+    }
+
+
 }

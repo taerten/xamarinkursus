@@ -18,7 +18,7 @@ namespace _18_08_2016_1
             Person Peter = new Person();
             Peter.PersonNavn = "Peter";
             Temp = Peter.Hentnavn();
-            Console.WriteLine(Temp);
+            //Console.WriteLine(Temp);
 
             Dyreart hundebasse = new Dyreart("Cruella", 4, 2);
 
@@ -29,9 +29,19 @@ namespace _18_08_2016_1
             Person Jens = new Person();
             Jens.Kæledyr_Art = Hans;
 
-            Console.WriteLine(Jens.HentKæledyrØjne());
+            //Console.WriteLine(Jens.HentKæledyrØjne());
 
-            Console.ReadKey();
+            //Console.ReadKey();
+
+            List<Person> List2 = new List<Person>();
+            List2.Add(Peter);
+            List2.Add(Jens);
+            List<Person> Listfinale = List2.Filterout(p => p.HentKæledyrØjne() > 2);
+            foreach (Person P in Listfinale)
+            {
+                Console.WriteLine(P);
+            }
+
         }
     }
     // 3D vektor
@@ -113,6 +123,7 @@ namespace _18_08_2016_1
             this.Navn = Navn2;
             this.Ben = Ben2;
             this.øjne = øjne2;
+            //this.
         }
 
         public int Get_øjne
@@ -122,7 +133,32 @@ namespace _18_08_2016_1
                 return øjne;
             }
         }
+        private AnimalType Fuglefisk = AnimalType.Fish;
+
+        public string Talk()
+        {
+            switch (Fuglefisk)
+            {
+                case AnimalType.Fish:
+                    Console.WriteLine("Pip");
+                    Console.ReadKey();
+                    return "Pip";
+
+                case AnimalType.Bird:
+                    Console.WriteLine(".................................");
+                    Console.ReadKey();
+                    return "...........";
+
+                default:
+                    return "Hverken eller...";
+
+            }
+        }
+
+
     }
+
+
     public class Kæledyr
     {
         public Dyreart Art;
@@ -218,6 +254,30 @@ namespace _18_08_2016_1
         public int HentKæledyrØjne()
         {
             return Kæledyr_Art.Art.Get_øjne;
+        }
+
+    }
+    //Enums
+    public enum AnimalType { Bird, Fish }
+
+
+    // Delagates/Lambda
+    public delegate bool Filter(Person DelegatePerson);
+
+    public static class PersonExtenson
+    {
+        public static List<Person> Filterout(this List<Person> input, Filter InputFilter)
+        {
+            List<Person> List1 = new List<Person>();
+
+            foreach (Person P in input)
+            {
+                if (!InputFilter.Invoke(P))
+                {
+                    List1.Add(P);
+                }
+            }
+            return List1;
         }
 
     }
