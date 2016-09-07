@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_02_08_2016_1.Page3">
+
+
+
+  <StackLayout>
+  <Image x:Name="image1" Source="1.png"/>
+                                
+    
+  </StackLayout>
+</ContentPage>
+  

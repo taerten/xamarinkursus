@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="a05_09_16.Page1">
+
+
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+  <!--     
+    <Label Text="Image Urisource XAML" />
+       <Image Source="https://xamarin.com/content/images/pages/forms/example-app.png" />
+    <Label Text="example-app.png gets downloaded from xamarin.com" />
+ -->
+    <!--
+    <Label Text="Sea color" BackgroundColor="Aqua" />
+    <Label Text="RGB" BackgroundColor="#00FF00" />
+    <Label Text="Alpha plus RGB" BackgroundColor="#CC00FF00" />
+    <Label Text="Tiny RGB" BackgroundColor="#0F0" />
+    <Label Text="Tiny Alpha plus RGB" BackgroundColor="#C0F0" />
+-->      
+    
+  </StackLayout>
+</ContentPage>

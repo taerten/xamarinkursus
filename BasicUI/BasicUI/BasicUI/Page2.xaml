@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BasicUI.Page2">
+  <StackLayout>
+    
+    <Label Text="XAML" BackgroundColor="Red" FontSize="20" VerticalOptions="CenterAndExpand"/>
+    <Label x:Name="yellowlabel" Text="Stinker" BackgroundColor="Yellow" FontSize="25" TextColor="Black" HorizontalOptions="Fill"/>
+    <Label Text="FOR VILDT !!!" BackgroundColor="Green" FontSize="30"/>
+    <Button x:Name="pushButton" Text="Prøv mig" />
+    <Button x:Name="pushButton2" Text="...og mig" Clicked ="PushButton_Clicked2" />
+                     
+  
+  </StackLayout>
+</ContentPage>

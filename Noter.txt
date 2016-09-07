@@ -44,20 +44,57 @@ Kan ikke;
 25/8 Tandlæge skalrykkes
 23/9 sidste dag xamarin
 29/8 Jobnet
+//////////////////////////////////////////////
+26-08-2016:
+Persondataloven for udviklere
+Owncloud
 
-public string GetSetPersonNavn
-        {
-            get
-            {
-                return PersonNavn;
-            }
-            set
-            {
-                PersonNavn = value;
-                OnNameChanged();
-                OnPropertyChanged(nameof(GetSetPersonNavn));
-            }
-        }
+Android:
+unified experience across platforms 
+
+*** Layout
+udgangspunkt i den fysiske verden - papir
+Seams
+
+typography, grids, space, scale, color, and imagery 
+
+Skalerbar
+Knapper
+Flade -text only
+Raised - function
+mange guidelines til knapper, dropdowns og iconer mm.
+
+***Usability– Accessibility
+princip: skal kunne forstås/bruges også af brugere med nedsat funktionsevne
+bevægelseshømmede
+short attention span
+nye brugere
+Brug disse til at teste
+
+Brug farver + lyd (illustreret bevægelse) til at understøtte functionalitet
+
+Tekst
+Brug iconer der viser hvad de gør...ikke hvad de ER.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

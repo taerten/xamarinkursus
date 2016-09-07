@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomComponent.MyView"
+             Orientation="Horizontal"
+             BackgroundColor="Blue">
+
+  <BoxView BackgroundColor="Red" />
+  <StackLayout Orientation="Vertical">
+    <Label x:Name ="firstName" />
+    <Label x:Name =" lastName"/>
+
+  </StackLayout>
+</StackLayout>

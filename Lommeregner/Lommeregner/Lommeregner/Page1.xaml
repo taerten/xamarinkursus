@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lommeregner.Page1">
+  <StackLayout>
+    <Label  x:Name="outputlabel" Text="0" TextColor="Black" BackgroundColor="White"  FontSize="20" />
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="kanp1" Text="1" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp2" Text="2" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp3" Text="3" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+      <Button x:Name="kanp4" Text="4" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp5" Text="5" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp6" Text="6" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="kanp7" Text="7" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp8" Text="8" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanp9" Text="9" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="kanp0" Text="0" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanpF1" Text="+" VerticalOptions="FillAndExpand" />
+      <Button x:Name="kanpF2" Text="=" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+  </StackLayout>
+
+</ContentPage>

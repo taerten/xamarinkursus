@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lommeregner.Page2">
+
+  <StackLayout>
+
+    <Button x:Name="Knap1" Text="Til side 1" Clicked="GotoPage1"/>
+  </StackLayout>
+
+
+</ContentPage>
